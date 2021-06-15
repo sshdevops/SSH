@@ -10,7 +10,7 @@ read email
 yes "" | ssh-keygen -t rsa -b 4096 -C $email
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
-xclip -sel c < ~/.ssh/id_rsa.pub
+#xclip -sel c < ~/.ssh/id_rsa.pub
 cat ~/.ssh/id_rsa.pub
 echo "^^^^^^^^"
 echo "Copy the text Above"
